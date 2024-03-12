@@ -1,0 +1,3 @@
+$(function(){
+        $('.shoes-slider').slick(); 
+})

@@ -1,0 +1,42 @@
+.container{
+  max-width: 1220px;
+padding: 0px 10px; 
+margin: 0 auto;
+
+}
+
+.logo{
+  height: fit-content;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list{
+  display: flex;
+}
+
+a{text-decoration: none;
+color: inherit;}
+
+.menu__link{
+  text-transform: uppercase;
+  padding: 42px 20px;
+
+}
+
+.menu__link:hover{
+  background: #000;
+  color: #fff;
+}
+
+.menu_item+ .menu__item{
+  padding-left: 10px;
+}
+
+
+
+
