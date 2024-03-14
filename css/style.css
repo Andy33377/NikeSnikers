@@ -8,6 +8,15 @@ body {
   color: #131313;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1220px;
   padding: 0px 10px;
@@ -26,7 +35,6 @@ body {
 
 .menu__list {
   display: flex;
-  list-style: none;
 }
 
 a {
@@ -97,6 +105,11 @@ li {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #ff4040;
+  }
 }
 
 .shoes-slider .slick-dots {
@@ -104,18 +117,17 @@ li {
   top: 50px;
 }
 
-.stick-dots {
+.slick-dots {
   position: absolute;
 }
 
-.stick-dots li + li {
+.slick-dots li + li {
   padding-top: 10px;
 }
 
-.stick-dots button {
+.slick-dots button {
   font-size: 0;
   padding: 0;
-  border: none;
   border-color: #131313;
   width: 2px;
   height: 25px;
@@ -123,27 +135,24 @@ li {
   cursor: pointer;
   transition: all 0.3s;
 }
-.stick-dots button:hover,
+.slick-dots button:hover,
 .slick-active button {
   border-color: #ff4040;
 }
 
-.shoes__list{
+.shoes__list {
   display: flex;
   justify-content: space-around;
-   list-style-type: none;
 }
 
-.shoes__list-item{
-
-font-weight: 700;
-text-transform: uppercase;
-flex-basis: 160px;
-text-align: center;
-
+.shoes__list-item {
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-basis: 160px;
+  text-align: center;
 }
 
-.bike__list-item span{
+.shoes__list-item span {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -151,37 +160,164 @@ text-align: center;
   text-transform: lowercase;
 }
 
-.info{
+.info {
   margin-bottom: 150px;
 }
 
-.info__inner{
+.info__inner {
   display: flex;
+  gap: 3rem;
 }
 
-.info__img{
-  margin-right: 60px;
+.info__img {
   flex-basis: 570px;
 }
 
-.info__list{
+.info__list {
   flex-basis: 490px;
 }
 
-.info__item+ .info__item{
+.info__item + .info__item {
   padding-top: 50px;
 }
 
-.info__item-text{
-min-width: 450px;
+.info__item-text {
+  min-width: 450px;
 }
 
-.info__item-title{
+.info__item-title {
   font-size: 16px;
   line-height: 19px;
   margin: 0 0 10px;
-  text-transform: s;
+  text-transform: uppercase;
 }
 
+.container__characteristics {
+  display: flex;
+  justify-content: space-between;
+}
 
+.characteristics__title {
+  background-color: #131313;
+  color: #fff;
+}
+.characteristics__list {
+}
 
+.characteristics {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.characteristics__title {
+  margin: 0 0 40px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.characteristics__inner {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.characteristics__img {
+  width: 630px;
+}
+
+.form {
+}
+
+.form__title {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.form__text {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.form__input-name,
+.form__input-phone {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #131313;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder {
+  color: #6f6f6f;
+}
+
+.form__btn {
+  background-color: #131313;
+  padding: 28px 81px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  transition: all 0.3s;
+}
+
+.form__btn:hover {
+  background-color: #ff4040;
+}
+
+.img__order {
+  max-height: 500px;
+}
+
+.section__order {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: grey;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__social-link + .footer__social-link {
+  margin-left: 26px;
+}
+
+.footer__contacts {
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-link + .footer__contacts-link {
+  margin-top: 10px;
+}
+.footer__contacts-img {
+  margin-right: 10px;
+}
